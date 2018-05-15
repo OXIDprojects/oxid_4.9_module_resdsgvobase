@@ -82,7 +82,7 @@ class oeGdprBaseProductRatingDao
      */
     private function getProductRatingDataById($productId)
     {
-        $this->database->setFetchMode(DatabaseInterface::FETCH_MODE_ASSOC);
+        $this->database->setFetchMode(oxDb::FETCH_MODE_ASSOC);
 
         $query = '
               SELECT

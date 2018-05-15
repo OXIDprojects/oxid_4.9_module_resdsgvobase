@@ -67,7 +67,7 @@ class oeGdprBaseOxuser extends oeGdprBaseOxuser_parent
     /**
      * Deletes recommendation lists.
      *
-     * @param DatabaseInterface $database
+     * @param $database
      */
     protected function oeGdprBaseDeleteRecommendationLists($database)
     {
@@ -81,9 +81,9 @@ class oeGdprBaseOxuser extends oeGdprBaseOxuser_parent
     /**
      * Deletes User reviews.
      *
-     * @param DatabaseInterface $database
+     * @param $database
      */
-    protected function oeGdprBaseDeleteReviews(DatabaseInterface $database)
+    protected function oeGdprBaseDeleteReviews($database)
     {
         $ids = $database->getCol(
             'SELECT oxid FROM oxreviews WHERE oxuserid = ?',
@@ -95,9 +95,9 @@ class oeGdprBaseOxuser extends oeGdprBaseOxuser_parent
     /**
      * Deletes User ratings.
      *
-     * @param DatabaseInterface $database
+     * @param $database
      */
-    protected function oeGdprBaseDeleteRatings(DatabaseInterface $database)
+    protected function oeGdprBaseDeleteRatings($database)
     {
         $ids = $database->getCol(
             'SELECT oxid FROM oxratings WHERE oxuserid = ?',
@@ -109,9 +109,9 @@ class oeGdprBaseOxuser extends oeGdprBaseOxuser_parent
     /**
      * Deletes price alarms.
      *
-     * @param DatabaseInterface $database
+     * @param $database
      */
-    protected function oeGdprBaseDeletePriceAlarms(DatabaseInterface $database)
+    protected function oeGdprBaseDeletePriceAlarms($database)
     {
         $ids = $database->getCol(
             'SELECT oxid FROM oxpricealarm WHERE oxuserid = ?',
@@ -124,9 +124,9 @@ class oeGdprBaseOxuser extends oeGdprBaseOxuser_parent
     /**
      * Deletes user accepted terms.
      *
-     * @param DatabaseInterface $database
+     * @param $database
      */
-    protected function oeGdprBaseDeleteAcceptedTerms(DatabaseInterface $database)
+    protected function oeGdprBaseDeleteAcceptedTerms($database)
     {
         $database->execute(
             'DELETE FROM oxacceptedterms WHERE oxuserid = ?',

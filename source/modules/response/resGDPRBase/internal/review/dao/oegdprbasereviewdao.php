@@ -79,7 +79,7 @@ class oeGdprBaseReviewDao
      */
     private function getReviewsFromDatabaseByUserId($userId)
     {
-        $this->database->setFetchMode(DatabaseInterface::FETCH_MODE_ASSOC);
+        $this->database->setFetchMode(oxDb::FETCH_MODE_ASSOC);
 
         $query = '
               SELECT 
@@ -92,7 +92,7 @@ class oeGdprBaseReviewDao
                   oxcreate DESC
         ';
 
-        return $this->database->select($query, array($userId));
+        return $this->database->getArray($query, array($userId));
     }
 
     /**

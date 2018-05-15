@@ -33,7 +33,7 @@ class oeGdprBaseModule extends oxModule
      */
     public function __construct()
     {
-        $sModuleId = 'oegdprbase';
+        $sModuleId = 'resGDPRBase';
 
         $this->setModuleData(
             array(

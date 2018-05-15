@@ -1,5 +1,5 @@
 [{capture append="oxidBlock_content"}]
-    [{oxscript include=$oViewConf->getModuleUrl('oegdprbase','out/js/oegdprbaseaccountreviewcontroller_azure.js') priority=10}]
+    [{oxscript include=$oViewConf->getModuleUrl('resGDPRBase','out/js/oegdprbaseaccountreviewcontroller_azure.js') priority=10}]
 
     [{block name="oegdprbase_account_manage_reviews"}]
         [{assign var="template_title" value="OEGDPRBASE_MY_REVIEWS"|oxmultilangassign}]

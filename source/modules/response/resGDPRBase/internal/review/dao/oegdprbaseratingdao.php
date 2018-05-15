@@ -94,7 +94,7 @@ class oeGdprBaseRatingDao
      */
     private function getRatingsFromDatabaseByUserId($userId)
     {
-        $this->database->setFetchMode(DatabaseInterface::FETCH_MODE_ASSOC);
+        $this->database->setFetchMode(oxDb::FETCH_MODE_ASSOC);
 
         $query = '
               SELECT 
@@ -107,7 +107,7 @@ class oeGdprBaseRatingDao
                   oxtimestamp DESC
         ';
 
-        return $this->database->select($query, array($userId));
+        return $this->database->getArray($query, array($userId));
     }
 
     /**
@@ -119,7 +119,7 @@ class oeGdprBaseRatingDao
      */
     private function getRatingsFromDatabaseByProductId($productId)
     {
-        $this->database->setFetchMode(DatabaseInterface::FETCH_MODE_ASSOC);
+        $this->database->setFetchMode(oxDb::FETCH_MODE_ASSOC);
 
         $query = "
               SELECT 

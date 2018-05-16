@@ -2,6 +2,8 @@
 [{block name="oegdprbase_dashboard"}]
     [{if $oViewConf->getActiveTheme() == 'azure'}]
         [{include file="oegdprbasedashboard_azure.tpl"}]
+    [{elseif $oViewConf->getActiveTheme() == 'roxid_mod' || $oViewConf->getActiveTheme() == 'roxid'}]
+        [{include file="oegdprbasedashboard_roxid.tpl"}]
     [{else}]
         [{include file="oegdprbasedashboard_flow.tpl"}]
     [{/if}]

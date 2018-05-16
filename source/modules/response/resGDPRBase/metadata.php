@@ -93,6 +93,7 @@ $aModule = array(
     'templates' => array(
         'oegdprbasedashboard_azure.tpl' => 'response/resGDPRBase/views/blocks/page/account/oegdprbasedashboard_azure.tpl',
         'oegdprbasedashboard_flow.tpl' => 'response/resGDPRBase/views/blocks/page/account/oegdprbasedashboard_flow.tpl',
+        'oegdprbasedashboard_roxid.tpl' => 'response/resGDPRBase/views/blocks/page/account/oegdprbasedashboard_roxid.tpl',
         'oegdprbaseaccountreviewaccount_menu_azure.tpl' => 'response/resGDPRBase/views/blocks/page/account/inc/oegdprbaseaccountreviewaccount_menu_azure.tpl',
         'oegdprbaseaccountreviewaccount_menu_flow.tpl' => 'response/resGDPRBase/views/blocks/page/account/inc/oegdprbaseaccountreviewaccount_menu_flow.tpl',
         'oegdprbasedeletemyaccountconfirmation_azure_modal.tpl' => 'response/resGDPRBase/views/blocks/page/account/oegdprbasedeletemyaccountconfirmation_azure_modal.tpl',
@@ -100,6 +101,7 @@ $aModule = array(
         'oegdprbaseaccountreviewcontroller.tpl' => 'response/resGDPRBase/views/blocks/page/account/oegdprbaseaccountreviewcontroller.tpl',
         'oegdprbaseaccountreviewcontroller_azure.tpl' => 'response/resGDPRBase/views/blocks/page/account/oegdprbaseaccountreviewcontroller_azure.tpl',
         'oegdprbaseaccountreviewcontroller_flow.tpl' => 'response/resGDPRBase/views/blocks/page/account/oegdprbaseaccountreviewcontroller_flow.tpl',
+        'oegdprbaseaccountreviewcontroller_roxid.tpl' => 'response/resGDPRBase/views/blocks/page/account/oegdprbaseaccountreviewcontroller_roxid.tpl',
         'oegdprbaseaccountreviewcontroller_confirmation_azure.tpl' => 'response/resGDPRBase/views/blocks/page/account/oegdprbaseaccountreviewcontroller_confirmation_azure.tpl',
         'oegdprbaseaccountreviewcontroller_confirmation_flow.tpl' => 'response/resGDPRBase/views/blocks/page/account/oegdprbaseaccountreviewcontroller_confirmation_flow.tpl',
     ),

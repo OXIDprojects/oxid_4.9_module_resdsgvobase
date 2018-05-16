@@ -1,7 +1,10 @@
 GDPR base module
 ================
 
-Module provides base functionality which is required for [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation).
+Module provides base functionality which is required for [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation).  
+It's based on the [original module](https://github.com/OXID-eSales/gdpr-base-module) from [OXID eSales](https://www.oxid-esales.com/).  
+
+Customized by [RESPONSE GmbH](https://www.response-gmbh.de) to work with OXID 4.9.
 
 ## Requirements
 
@@ -12,18 +15,18 @@ Module provides base functionality which is required for [GDPR](https://en.wikip
 * Download module source:
 
 ```
-git clone --depth=1 --branch=master https://github.com/OXID-eSales/gdpr-base-module.git
+git clone https://github.com/RESPONSEGmbH/oxid_4.9_module_resdsgvobase.git
 ```
 
 * Copy module contents to the OXID eShop:
 
 ```
-cp -r gdpr-base-module/source/* <path_to_your_oxid_eshop>
+cp -r oxid_4.9_module_resdsgvobase/source/* <path_to_your_oxid_eshop>
 ```
 
 * Activate module in admin area.
 
-For more detailed instructions how to install module please see `/documentation/UserManual_de.pdf` in this package.
+For more detailed instructions how to install module please see [the documentation from the original module](https://github.com/OXID-eSales/gdpr-base-module/blob/master/documentation/UserManual_de.pdf).
 
 ## Features
 

@@ -16,7 +16,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-12 text-right">
+                        <div class="[{if $oViewConf->getActiveTheme() == 'roxid_mod' || $oViewConf->getActiveTheme() == 'roxid'}]col-sm-24[{else}]col-md-12[{/if}] text-right">
                             [{block name="oegdprbase_account_delete_my_account_confirmation_warning_message"}]
                             <div class="alert alert-danger text-left">
                                 [{oxmultilang ident="OEGDPRBASE_DELETE_MY_ACCOUNT_WARNING"}]
